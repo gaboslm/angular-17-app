@@ -1,0 +1,50 @@
+ul.menu {
+  display: flex;
+  flex-direction: row;
+  gap: .25rem;
+  list-style: none;
+  padding: 0;
+}
+
+ul li.item {
+  position: relative;
+  transition: all ease-in-out .3s;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 80px;
+  height: 80px;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px transparent, -1px -1px transparent;
+}
+
+ul li.item.selected {
+  border: 1px solid black;
+  box-shadow: 1px 1px rgba(0,0,0, .5), -1px -1px rgba(255,255,255, .5);
+  border-radius: 16px;
+  height: 120px;
+  width: 120px;
+}
+
+.selected-game{
+  position: absolute;
+  color: white;
+  left: calc(120px + 3px + .25rem);
+  bottom: 15px;
+  font-size: 16px;
+  width: max-content;
+}
+
+.ps-badge{
+  font-size: 12px;
+  background-color: black;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 0 0 1px 1px rgba(255,255,255, .2);
+}
+
+ul li.item img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}

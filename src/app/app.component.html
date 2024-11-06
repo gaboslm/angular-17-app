@@ -1,1 +1,9 @@
-<h1>Hello world from {{ country.toUpperCase() }}</h1>
+<main [style.background-image]='cover'>
+  <app-user />
+
+  <section>
+    <app-game-list
+      (setFavoriteGame)="setbackground($event)"
+    />
+  </section>
+</main>

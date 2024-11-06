@@ -1,0 +1,51 @@
+section{
+  display: flex;
+  justify-content: flex-end;
+  min-height: 74px;
+}
+
+nav{
+  top: 20px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  padding: 4px 5px 4px 8px;
+  width: fit-content;
+  border: rgba(255,255,255, .1) 1px solid;
+}
+
+.user{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.user img{
+  height: 32px;
+  width: 32px;
+  aspect-ratio: 1/1;
+  border-radius: 50px;
+}
+
+.user p{
+  margin: 0;
+  font-size: 18px;
+}
+
+.selected-game{
+  font-size: 32px;
+  color: white;
+  border-radius: 50px;
+  background-color: rgba(0,0,0, .5);
+  box-shadow: 0 0 10px 10px rgba(0,0,0, .5);
+  width: fit-content;
+  padding: 2px 5px;
+}
+
+button{
+  /* height: 50px; */
+}

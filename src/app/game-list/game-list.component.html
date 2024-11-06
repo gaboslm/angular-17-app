@@ -1,0 +1,16 @@
+<ul class="menu">
+  @for (game of games; track game.id) {
+    <li
+      [class]="{ 'item': true, 'selected': selectedGame && selectedGame.id === game.id }"
+      (mouseenter)="setGame(game)"
+    >
+      <img [src]="game.icon" alt="cover">
+      @if (selectedGame?.id === game.id) {
+        <p class="selected-game">
+          <span class="ps-badge">PS4</span>
+          {{ selectedGame?.name }}
+        </p>
+      }
+    </li>
+  }
+</ul>

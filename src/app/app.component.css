@@ -1,0 +1,11 @@
+main {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+section{
+  padding: 20px;
+  margin: 0 auto;
+  padding-top: 32px;
+}
